@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<script type="text/javascript" src='Gsm.js'></script>
+<script type="text/javascript" src='Call.js'></script>
+<script type="text/javascript">
+	
+	var gsmOne = new Gsm('Samsung');
+	var gsmTwo = new Gsm('Nokia');
+	
+	gsmOne.insertSimCard('0888888888');
+	gsmTwo.insertSimCard('0888888889');
+	gsmOne.call(gsmTwo, 120);
+	
+</script>
+<body>
+
+</body>
+</html>
